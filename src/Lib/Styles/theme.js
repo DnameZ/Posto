@@ -3,6 +3,7 @@ import BackgroundImage from "../../Assets/Images/MainPageBack.png";
 import Fb from "../../Assets/Images/fbIcon.jpg";
 import Insta from "../../Assets/Images/instagram png.png";
 import Yt from "../../Assets/Images/ytpng.png";
+import BackButton from "../../Assets/Images/Polygon 2.png";
 
 export const breakpoints = {
     mobileLarge: 'min-width: 576px',
@@ -21,5 +22,6 @@ export const Images = {
     Background:`${BackgroundImage}`,
     FbIcon:`${Fb}`,
     InstaIcon:`${Insta}`,
-    YtIcon:`${Yt}`
+    YtIcon:`${Yt}`,
+    Back:`${BackButton}`
 };

@@ -18,6 +18,17 @@ button
   font-family: 'Permanent Marker', cursive;
 }
 
+input
+{
+  
+  font-family: 'Permanent Marker', cursive;
+}
+
+input:focus
+{
+  outline: none;
+}
+
 body {
   overflow-x: hidden;
   height: 100%;
