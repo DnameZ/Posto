@@ -4,24 +4,27 @@ import { Images } from '../../Lib/Styles/theme';
 
 import { MainPage  } from '../MainPage/MainStyle';
 
-import { TittleWrapper,
-        InputBoxWrapper,
-        ButtonWrapper } from './RegisterStyle';
+import { TitleWrapper } from '../MainPage/MainStyle';
+
+import { ButtonWrapper } from './RegisterStyle';
+
+import { InputBoxWrapper } from '../LogInPage/LogInStyle';
 
 import { MainTitle, 
-        InputBox, 
-        ButtonBig,
-        BackButtonWrapper,
-        BackButton } from '../../Lib/Styles/generalStyles';
+         InputBox, 
+         ButtonBig,
+         BackButtonWrapper,
+         BackButton } from '../../Lib/Styles/generalStyles';
 
 
 const RegisterPage = () => {
 
-    const inputBoxes=["Username","Password"];
+    const inputBoxes=["Username","E-mail","Password","Repeat-password"];
+
     const Password="Password";
+    const Repeatpassword="Repeat-password";
     const passowrd="password";
     const DoNothing="";
-
 
     return ( 
         <MainPage>
@@ -30,19 +33,21 @@ const RegisterPage = () => {
                 <BackButton src={Images.Back}/>
             </BackButtonWrapper>
 
-            <TittleWrapper>
+            <TitleWrapper>
                 <MainTitle>Posto</MainTitle>
-            </TittleWrapper>
+            </TitleWrapper>
 
             <InputBoxWrapper>
-                {inputBoxes.map((inputbox,index)=>(
-                <InputBox key={index} placeholder={inputbox} type={ inputbox === Password ? passowrd : DoNothing} />
-                ))} 
+                {inputBoxes.map((inputBox,index)=>(
+                    <InputBox key={index} placeholder={inputBox} type={ 
+                        inputBox === Password || inputBox === Repeatpassword ? passowrd : DoNothing }/>
+                ))}
             </InputBoxWrapper>
 
             <ButtonWrapper>
-                    <ButtonBig>Log in</ButtonBig>
+                <ButtonBig>Register</ButtonBig>
             </ButtonWrapper>
+
         </MainPage>
      );
 }
