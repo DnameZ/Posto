@@ -27,7 +27,7 @@ const RegisterPage = () => {
     const DoNothing="";
 
     return ( 
-        <MainPage>
+        <MainPage style = {{ backgroundImage : `url(${Images.Background})` }}>
 
             <BackButtonWrapper>
                 <BackButton src={Images.Back}/>

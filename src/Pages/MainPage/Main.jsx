@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainPage,
+import {MainPage,
         TitleWrapper,
         ButtonWrapper,
         SocialMedia,
@@ -14,8 +14,7 @@ import { Images } from '../../Lib/Styles/theme';
 
 const  Main = () => {
     return (
-        <MainPage>
-
+        <MainPage style = {{ backgroundImage : `url(${Images.Background})` }}>
             <TitleWrapper>
                 <MainTitle>Posto</MainTitle>
             </TitleWrapper>

@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import { Colors,Images } from '../../Lib/Styles/theme';
+import { Colors} from '../../Lib/Styles/theme';
 
 export const MainPage=styled.div`
     display:flex;
     width:100vw;
     height:100vh;
-    background-image : url(${Images.Background});
     background-size: cover;
     `;
 
