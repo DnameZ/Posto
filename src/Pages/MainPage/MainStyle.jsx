@@ -3,6 +3,7 @@ import { Colors} from '../../Lib/Styles/theme';
 
 export const MainPage=styled.div`
     display:flex;
+    justify-content:center;
     width:100vw;
     height:100vh;
     background-size: cover;

@@ -18,6 +18,7 @@ export const breakpoints = {
   };
 
 export const Colors = {
+    Dark:`#000000`,
     TransparentButton:` rgba(241,6,6,0)`,
     TransparentInputBox: `rgba(0,0,0,0.45)`,
     TransparentNavBar:` rgba(0, 0, 0, 0.43);`,
