@@ -9,6 +9,8 @@ import PlusButton from "../../Assets/Images/plus.png";
 import HomeButton from "../../Assets/Images/homeIconPng.png";
 import EyeButton from "../../Assets/Images/eye.png";
 import SearchButton from "../../Assets/Images/search.png";
+import LikeButton from "../../Assets/Images/heart.png";
+import DownloadButton from "../../Assets/Images/download.png";
 
 export const breakpoints = {
     mobileLarge: 'min-width: 576px',
@@ -23,7 +25,8 @@ export const Colors = {
     TransparentInputBox: `rgba(0,0,0,0.45)`,
     TransparentNavBar:` rgba(0, 0, 0, 0.43);`,
     TransparentPhoto:` rgba(0, 0, 0, 0.60);`,
-    White:`#ffffff`
+    White:`#ffffff`,
+    TextColor: `rgba(162, 0, 255, 0.98);`
 };
 
 export const Images = {
@@ -36,6 +39,8 @@ export const Images = {
     Plus:`${PlusButton}`,
     Home:`${HomeButton}`,
     Eye:`${EyeButton}`,
-    Search:`${SearchButton}`
+    Search:`${SearchButton}`,
+    Like:`${LikeButton}`,
+    Download:`${DownloadButton}`
 
 };
